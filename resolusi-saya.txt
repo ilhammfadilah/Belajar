@@ -1,3 +1,4 @@
 resolusi 2019
 
 - membangun web computer club
+- membuat aplikasi android
