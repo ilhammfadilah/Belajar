@@ -4,7 +4,7 @@ css grid merupakan merupakan teknik di dalam css untuk memudahkan mengatur dalam
 ## Caram membuat grid pada css
 untuk membuat sebuah grid pada css kita buat terlebih dahulu element HTML yang akan kita buat untuk dijadikan sebagai grid.
 
-<code>
+```html:
   <div class="wrapper">
     <div class="one">One</div>
     <div class="two">Two</div>
@@ -13,7 +13,7 @@ untuk membuat sebuah grid pada css kita buat terlebih dahulu element HTML yang a
     <div class="five">Five</div>
     <div class="six">Six</div>
   </div>
-</code>
+```
 
 kemudian kita masukan css pada element tersebut
 
