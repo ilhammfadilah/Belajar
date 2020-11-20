@@ -68,3 +68,15 @@ baris juga dapat menggunakan nilai fraction.
 ```grid-template-rows: minmax(100px, auto);```
 
 baris juga dapat di isi dengan nilai minmax sama seperti kolom.
+
+### grid-template-area
+
+### grid-template
+
+### grid-auto-column
+
+### grid-auto-rows
+
+### grid-auto-flow
+
+### grid
