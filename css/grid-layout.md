@@ -71,6 +71,64 @@ baris juga dapat di isi dengan nilai minmax sama seperti kolom.
 
 ### grid-template-area
 
+dalam grid juga kita bisa meletakan element html yang kita buat sesuai dengan area yang kita buat, ini sangat memudahkan sekali untuk membuat layout.
+sebagai contoh disini saya membuat sebuah element sederhana:
+
+```html:
+<div id="wrapper">
+  <header> header </header>
+  <nav> navigation </nav>
+  <aside> aside </aside>
+  <main> main </main>
+  <footer> footer </footer>
+</div>
+```
+
+kemudian kita buat css untuk meletakan element berdasarkan area yang akan kita buat, kita beri display grid terlebih dahulu pada element parent kita.
+
+```css:
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside main"
+    "aside main"
+    "footer footer";
+  grid-auto-rows: 1fr;
+  grid-gap: 4px;
+}
+```
+kira beri style juga untuk setiap elemnt yang ada di dalam parent
+
+```css:
+#wrapper > * {
+  padding: 20px;
+  background: #c4c4c4;
+}
+```
+
+kemudian setiap elemnent bisa kita kita identifikasi agar dapat dikenali oleh ```grid-template-areas``
+
+```css:
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+grid-area: footer;
+}
+```
+
 ### grid-template
 
 ### grid-auto-column
