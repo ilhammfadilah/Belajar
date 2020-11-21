@@ -131,6 +131,8 @@ grid-area: footer;
 
 ### grid-template
 
+properti ini merupakan property shorthand untuk menyatakan langsung dari aturan grid-columns, rows, areas
+
 ### grid-auto-column
 
 ### grid-auto-rows
