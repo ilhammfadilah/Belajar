@@ -131,7 +131,32 @@ grid-area: footer;
 
 ### grid-template
 
-properti ini merupakan property shorthand untuk menyatakan langsung dari aturan grid-columns, rows, areas
+properti ini merupakan property shorthand untuk menyatakan langsung dari aturan grid-columns, rows, areas.
+
+```css:
+/* Keyword value */
+grid-template: none;
+
+/* grid-template-rows / grid-template-columns values */
+grid-template: 100px 1fr / 50px 1fr;
+grid-template: auto 1fr / auto 1fr auto;
+grid-template: [linename] 100px / [columnname1] 30% [columnname2] 70%;
+grid-template: fit-content(100px) / fit-content(40%);
+
+/* grid-template-areas grid-template-rows / grid-template-column values */
+grid-template: "a a a"
+               "b b b";
+grid-template: "a a a" 20%
+               "b b b" auto;
+grid-template: [header-top] "a a a"     [header-bottom]
+                 [main-top] "b b b" 1fr [main-bottom]
+                            / auto 1fr auto;
+
+/* Global values */
+grid-template: inherit;
+grid-template: initial;
+grid-template: unset;
+```
 
 ### grid-auto-column
 
