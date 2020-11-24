@@ -182,6 +182,60 @@ grid-auto-columns: unset;
 
 ### grid-auto-rows
 
+mengatur ukuran baris secara auto, bisa menggunakan sintak sintak berikut:
+
+```css:
+/* Keyword values */
+grid-auto-rows: min-content;
+grid-auto-rows: max-content;
+grid-auto-rows: auto;
+
+/* <length> values */
+grid-auto-rows: 100px;
+grid-auto-rows: 20cm;
+grid-auto-rows: 50vmax;
+
+/* <percentage> values */
+grid-auto-rows: 10%;
+grid-auto-rows: 33.3%;
+
+/* <flex> values */
+grid-auto-rows: 0.5fr;
+grid-auto-rows: 3fr;
+
+/* minmax() values */
+grid-auto-rows: minmax(100px, auto);
+grid-auto-rows: minmax(max-content, 2fr);
+grid-auto-rows: minmax(20%, 80vmax);
+
+/* multiple track-size values */
+grid-auto-rows: min-content max-content auto;
+grid-auto-rows: 100px 150px 390px;
+grid-auto-rows: 10% 33.3%;
+grid-auto-rows: 0.5fr 3fr 1fr;
+grid-auto-rows: minmax(100px, auto) minmax(max-content, 2fr) minmax(20%, 80vmax);
+grid-auto-rows: 100px minmax(100px, auto) 10% 0.5fr fit-content(400px);
+
+/* Global values */
+grid-auto-rows: inherit;
+grid-auto-rows: initial;
+grid-auto-rows: unset;
+```
+
 ### grid-auto-flow
 
-### grid
+properti ini dapat digunakan untuk penempatan secara otomatis
+
+```css:
+/* Keyword values */
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: dense;
+grid-auto-flow: row dense;
+grid-auto-flow: column dense;
+
+/* Global values */
+grid-auto-flow: inherit;
+grid-auto-flow: initial;
+grid-auto-flow: unset;
+```
